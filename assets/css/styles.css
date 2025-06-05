@@ -1,0 +1,54 @@
+/* Custom styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Animation for flash messages */
+.flash-message {
+    transition: all 0.3s ease;
+}
+
+/* Room card hover effect */
+.room-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+/* Table styling */
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+th {
+    background-color: #f8fafc;
+}
+
+tr:nth-child(even) {
+    background-color: #f8fafc;
+}
+
+/* Button transitions */
+.btn {
+    transition: all 0.2s ease;
+}
+
+.btn:hover {
+    transform: translateY(-1px);
+}
+
+/* Responsive adjustments */
+@media (max-width: 640px) {
+    .mobile-stack {
+        flex-direction: column;
+    }
+    
+    .mobile-stack > * {
+        margin-bottom: 0.5rem;
+    }
+    
+    .mobile-stack > *:last-child {
+        margin-bottom: 0;
+    }
+}
